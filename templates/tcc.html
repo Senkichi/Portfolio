@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+{% block dropdown %}
+
+
+{% endblock dropdown %}
+
+{% block content %}
+
+	<div class = "d-flex justify-content-center align-items-center container text-center">
+		<div class = "col-xs-2">
+			<label for="year" class="text-center">Year</label>
+      <select id="year" class="form-control form-control-lg">
+        <option value="2070" selected="selected">2070</option>
+        <option value="2050">2050</option>
+      </select>
+      </div>
+		<div class = "col-xs-3">
+
+		  <label for="model" data-toggle="popover" title="Severity of Climate Change"
+		  data-content = "Driven by future pollution levels" data-trigger="hover" data-placement = "bottom" >
+		  Severity (?)</label>
+
+          <select id="model" class="form-control form-control-lg" >
+          <option value="moderate" selected="selected">Moderate</option>
+          <option value="harsh">Harsh</option>
+
+      </select>
+	</div>
+
+<div class = "col-xs-2">
+
+		  <label for="model" data-toggle="popover" title="Sensitivity"
+		  data-content = "Controls scaling of heatmap intensity" data-trigger="hover" data-placement = "bottom" >
+		  Sensitivity (?)</label>
+
+          <select id="sensitivity" class="form-control form-control-lg" >
+          <option value= "1.2">Low</option>
+          <option value= "1" selected="selected">Medium</option>
+          <option value= "0.8">High</option>
+
+      </select>
+	</div>
+		<div class = "col-xs-3">
+			<label for="algorithm">Algorithm</label>
+      <select id="algorithm" class="form-control form-control-lg">
+        <option value="cnnsequential" selected="selected">Neural Network</option>
+        <option value="randomforest">Random Forest</option>
+        <option value="KNN">KNN*</option>
+        <option value="LogReg">Log Regression*</option>
+      </select>
+	</div>
+
+		<div class = "col-xs-2">
+		<button type="button" class="btn btn-danger" id="redraw">Redraw</button>
+		</div>
+	</div>
+   </form>
+
+  <div id="map-holder">
+		<div class="container fill">
+		<div id="map"></div>
+		</div>
+	</div>
+{% endblock content %}
