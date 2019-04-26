@@ -7,7 +7,7 @@ import json
 from bson.json_util import dumps
 from flask_cors import CORS
 
-app = Flask(__name__,template_folder='static/templates')
+app = Flask(__name__,template_folder='templates')
 
 
 #allow cross origin script access so can access via js
