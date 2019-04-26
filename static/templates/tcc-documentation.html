@@ -7,24 +7,24 @@
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="static/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/animate.css">
 
-    <link rel="stylesheet" href="../css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="static/css/magnific-popup.css">
 
-    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="static/css/aos.css">
 
-    <link rel="stylesheet" href="../css/ionicons.min.css">
+    <link rel="stylesheet" href="static/css/ionicons.min.css">
 
-    <link rel="stylesheet" href="../css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="../css/jquery.timepicker.css">
+    <link rel="stylesheet" href="static/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="static/css/jquery.timepicker.css">
 
 
-    <link rel="stylesheet" href="../css/flaticon.css">
-    <link rel="stylesheet" href="../css/icomoon.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="static/css/flaticon.css">
+    <link rel="stylesheet" href="static/css/icomoon.css">
+    <link rel="stylesheet" href="static/css/style.css">
   </head>
   <body>
 
@@ -37,18 +37,16 @@
     <nav id="colorlib-main-nav" role="navigation">
       <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
       <div class="js-fullheight colorlib-table">
-      	<div class="img" style="background-image: url(images/author-2.jpg);"></div>
+      	<div class="img" style="background-image: url(images/sam_headshot_1.jpg);"></div>
         <div class="colorlib-table-cell js-fullheight">
           <div class="row no-gutters">
             <div class="col-md-12 text-center">
-              <h1 class="mb-4"><a href="index.html" class="logo">Beckham Muff</a></h1>
+              <h1 class="mb-4"><a href="index.html" class="logo">Samuel Martin</a></h1>
               <ul>
                 <li><a href="index.html"><span><small>01</small>Home</span></a></li>
                 <li><a href="about.html"><span><small>02</small>Resume</span></a></li>
-                <li><a href="services.html"><span><small>03</small>Services</span></a></li>
-                <li><a href="portfolio.html"><span><small>04</small>Portfolio</span></a></li>
-                <li class="active"><a href="blog.html"><span><small>05</small>Blog</span></a></li>
-                <li><a href="contact.html"><span><small>06</small>Contact</span></a></li>
+                <li><a href="portfolio.html"><span><small>03</small>Portfolio</span></a></li>
+                <li><a href="contact.html"><span><small>04</small>Contact</span></a></li>
               </ul>
             </div>
           </div>
@@ -62,7 +60,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="colorlib-navbar-brand">
-                <a class="colorlib-logo" href="index.html"><span class="logo-img" style="background-image: url(images/person_1.jpg);"></span>Beckham Muff</a>
+                <a class="colorlib-logo" href="static/templates/index.html"><span class="logo-img" style="background-image: url(static/images/sam_headshot_1.jpg);"></span>Samuel Martin</a>
               </div>
               <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
             </div>
@@ -83,7 +81,7 @@
               <h2 class="mb-4">I like maps.</h2>
               <p>My fondness for them might be born of the comfort earned by hours of repeated creation (I’ve made a great many maps). It might be the simplicity of them – data shown as map overlays is immediately understandable to pretty much everyone. It might be their versatility, the potential expression for geographic data is limited only by your own creativity and tolerance for frustration. Most likely, those factors combined with a tendency towards topical data products is what inspired the idea behind ‘The Catastrophe Coefficient’.</p>
               <p>
-                <img src="../images/image_6.jpg" alt="" class="img-fluid">
+                <img src="static/images/image_6.jpg" alt="" class="img-fluid">
               </p>
               <p>Our goal was to roughly predict which areas in the US would have an increased likelihood of wildfires as the effects of climate change intensify throughout the 21st century. We would then display our predictions in a transparent map layer, akin to a heatmap, wherever we had climate data. Our ideal product would cover the continental United States, but if necessary we were willing to settle for the Western US.</p>
 
@@ -96,14 +94,14 @@
               <p>First, our fire needed a spark. Ignition came in the form of a dataset created by the U.S. Geological Survey Forest and Rangeland Ecosystem Science Center. They created a shapefile with polygons covering the area of every wildfire on record from 1870-2015 across eight states. We loaded the shapefile into R, selected only wildfires that occurred from 1960-2000, and converted the polygons to a raster format spatially consistent with the Worldclim data. We overlaid these data layers, with the climate values with the wildfires expressed as 1/0 presence/absence data, and exported the dataframe from R into a Pandas dataframe in Python.</p>
             </div>
             <div class-'col'>
-              <img src = '../images/wf_extent.png'>
+              <img src = 'static/images/wf_extent.png'>
             </div>
 
           </div>
 
           <div class = 'row d-flex justify-content-center'>
             <div class="col">
-                <img src="../images/worldclim.png" alt="" class="img-fluid">
+                <img src="static/images/worldclim.png" alt="" class="img-fluid">
             </div>
 
             <div class="col">
@@ -166,23 +164,23 @@
     </div>
 
 
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="../js/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/jquery.easing.1.3.js"></script>
-    <script src="../js/jquery.waypoints.min.js"></script>
-    <script src="../js/jquery.stellar.min.js"></script>
-    <script src="../js/owl.carousel.min.js"></script>
-    <script src="../js/jquery.magnific-popup.min.js"></script>
-    <script src="../js/aos.js"></script>
-    <script src="../js/jquery.animateNumber.min.js"></script>
-    <script src="../js/scrollax.min.js"></script>
-    <script src="../js/bootstrap-datepicker.js"></script>
-    <script src="../js/jquery.timepicker.min.js"></script>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery.easing.1.3.js"></script>
+    <script src="static/js/jquery.waypoints.min.js"></script>
+    <script src="static/js/jquery.stellar.min.js"></script>
+    <script src="static/js/owl.carousel.min.js"></script>
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+    <script src="static/js/aos.js"></script>
+    <script src="static/js/jquery.animateNumber.min.js"></script>
+    <script src="static/js/scrollax.min.js"></script>
+    <script src="static/js/bootstrap-datepicker.js"></script>
+    <script src="static/js/jquery.timepicker.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="../js/google-map.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="static/js/google-map.js"></script>
+    <script src="static/js/main.js"></script>
 
   </body>
 </html>

@@ -6,7 +6,7 @@ import json
 from bson.json_util import dumps
 from flask_cors import CORS
 
-app = Flask(__name__,template_folder='templates')
+app = Flask(__name__,template_folder='static/templates')
 
 
 #allow cross origin script access so can access via js
@@ -25,13 +25,13 @@ db = client.weather
 def index():
     return render_template("index.html")
 
-@app.route("/tcc")
+@app.route("/tcc.html")
 def tcc():
     return render_template("tcc.html")
 
-@app.route("/tcc-documentation")
+@app.route("/tcc-documentation.html")
 def tcc_doc():
-    return render_template("tcc_documentation.html")
+    return render_template("tcc-documentation.html")
 
 # Set up api routes
 @app.route("/api/v1/<year>/<severity>/<algorithm>")
