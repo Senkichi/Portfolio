@@ -33,6 +33,14 @@ def tcc():
 def tcc_doc():
     return render_template("tcc-documentation.html")
 
+@app.route("/about.html")
+def about():
+    return render_template("about.html")
+
+@app.route("/articles.html")
+def articles():
+    return render_template("articles.html")
+
 # Set up api routes
 @app.route("/api/v1/<year>/<severity>/<algorithm>")
 def firePrediction(year,severity,algorithm):
